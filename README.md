@@ -1,4 +1,4 @@
-# Notion-Repackaged
+# Nativelike Notion
 A repackaged beautiful Notion app that works on macOS.
 
 - built with Nativefier
