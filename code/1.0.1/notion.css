@@ -1,0 +1,197 @@
+/* site.css */
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-menu-background-alt: rgba(235, 235, 235, 0.8) !important;
+        --color-scroller-thumb-alt: rgba(0, 0, 0, 0.22) !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-menu-background-alt: rgba(40, 40, 40, 0.8) !important;
+        --color-scroller-thumb-alt: rgba(255, 255, 255, 0.33) !important;
+    }
+}
+
+/* header is draggable... */
+div.notion-topbar {
+  -webkit-app-region: drag;
+}
+div.notion-sidebar-container {
+  -webkit-app-region: drag;
+}
+html.notion-front-page{
+  -webkit-app-region: drag;
+}
+
+
+/* but any buttons inside the header shouldn't be draggable */
+div.notion-topbar-action-buttons {
+  -webkit-app-region: no-drag !important;
+}
+/*div.notranslate {
+  -webkit-app-region: no-drag;
+}*/
+div.notion-sidebar {
+  -webkit-app-region: no-drag !important;
+}
+
+/* move some items out of way for the traffic light */
+div.notion-sidebar {
+  margin-top: 45px; !important
+}
+
+/* hider */
+div.notion-help-button.notion-focusable { 
+display: none !important; 
+}
+div.notion-help-button.notion-focusable { 
+display: none !important; 
+}
+div.notion-fadein { 
+display: none !important; 
+}
+#notion-app > div > div:nth-child(1) > div:nth-child(1) > div > nav { 
+display: none !important; 
+}
+
+/* make sidebar transplant */
+div.notion-sidebar-container {
+background: hsl(0deg 40% 70% / 0%) !important;
+}  
+style attribute  {
+background: hsl(0deg 40% 70% / 0%) !important;
+}  
+div.notion-cursor-listener  {
+background: hsl(0deg 40% 70% / 0%) !important;
+}  
+div.notion-app-inner.notion-dark-theme {
+background: hsl(0deg 40% 70% / 0%) !important;
+}  
+body.dark {
+background: hsl(0deg 40% 70% / 0%) !important;
+}  
+body.notion-body.dark {
+background: hsl(0deg 40% 70% / 0%) !important;
+}  
+
+/* change font */
+:root {
+  --theme--font_sans: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --theme--font_serif: Lyon-Text, Georgia, YuMincho, 'Yu Mincho',
+    'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'Songti TC', 'Songti SC',
+    SimSun, 'Nanum Myeongjo', NanumMyeongjo, Batang, serif;
+  --theme--font_mono: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --theme--font_code: SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    Courier, monospace;
+  --theme--font_quote: var(--theme--font_sans);
+  --theme--font_headings: var(--theme--font_sans);
+}
+[style*='Segoe UI'] {
+  font-family: var(--theme--font_sans) !important;
+}
+[style*='Georgia'] {
+  font-family: var(--theme--font_serif) !important;
+}
+[style*='iawriter-mono'] {
+  font-family: var(--theme--font_mono) !important;
+}
+[style*='SFMono-Regular'] {
+  font-family: var(--theme--font_code) !important;
+}
+.notion-selectable.notion-quote-block div[spellcheck='true'] {
+  font-family: var(--theme--font_quote) !important;
+}
+[placeholder='Heading 1'],
+[placeholder='Heading 2'],
+[placeholder='Heading 3'] {
+  font-family: var(--theme--font_headings) !important;
+}
+
+/*change Scrollbar*/
+div.notion-scroller.vertical.horizontal {
+margin-right: 3px !important;
+margin-bottom: 3px !important;
+}
+
+div.notion-scroller.vertical {
+margin-right: 3px !important;
+margin-bottom: 3px !important;
+}
+
+div.notion-scroller.horizontal {
+margin-right: 3px !important;
+margin-bottom: 3px !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(246, 214, 214, 0) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px !important;
+  background-color: var(--color-scroller-thumb-alt) !important;
+  /*border: solid 3px background !important;*/
+}
+
+div.pseudoSelection {
+margin-right: 7px !important;
+}
+
+/* make vibrant*/
+/*头像框*/
+#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div > div:nth-child(2) > div > div > div {
+    background-color: var(--color-menu-background-alt) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    border-radius: 8px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgba(140, 140, 140, 0.5) !important;
+}  
+
+#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div > div > footer > div {
+  background-color: rgba(246, 214, 214, 0) !important;
+}
+
+/*很多*/
+#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div {
+    background-color: var(--color-menu-background-alt) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    border-radius: 8px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgba(140, 140, 140, 0.5) !important;
+}  
+
+/*quick find*/
+/*caused serious bugs*/
+/*#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div:nth-child(2) {
+    background-color: var(--color-menu-background-alt) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    border-radius: 10px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgba(140, 140, 140, 0.5) !important;
+}  */
+
+/*菜单侧边栏*/
+/*caused serious bugs*/
+/*#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(1) {
+  background-color: rgba(246, 214, 214, 0) !important;
+}
+
+#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div:nth-child(2) {
+    background-color: var(--color-menu-background-alt) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    border-radius: 10px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgba(140, 140, 140, 0.5) !important;
+} */
