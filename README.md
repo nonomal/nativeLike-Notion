@@ -1,12 +1,12 @@
 # Nativelike Notion
 A repackaged beautiful Notion app that works on macOS.
+Built with Nativefier
 
-- built with Nativefier
-- support Vibrancy
-- fix Chinese font fallback
-- other minor changes
+- full support of Vibrancy
+- fixed font fallback
 - nativelike scrollbar
+- nativelike everything
+- other minor changes
 
-![Image text](img/1.0.1_1.png)
-![Image text](img/1.0.1_2.png)
-![Image text](img/1.0.1_3.png)
+img/Light.JPG
+img/Dark.JPG
