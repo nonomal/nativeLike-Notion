@@ -11,7 +11,7 @@ This is built with [Nativefier](https://github.com/nativefier/nativefier), a pro
 - Native-like everything;
 - Other minor changes;
 
-![Light](img/Light.JPG)
-![Dark](img/Dark.JPG)
+![Light](Screenshot Dark.png)
+![Dark](Screenshot Dark.png)
 
 I am currently working on using SwiftUI and WebKit to build it so that it will consume less battery life. However, this may take a long time.
