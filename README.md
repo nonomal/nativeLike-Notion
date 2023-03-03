@@ -1,3 +1,5 @@
+![icon](icon.icns)
+
 # nativeLike Notion
 
 ## Introduction
@@ -14,7 +16,17 @@ Download now and experience the difference!
 
 ## Screenshot
 
+![screenshot 01](screenshots/01.png)
+
+![screenshot 02](screenshots/02.png)
+
+![screenshot 03](screenshots/03.png)
+
+![screenshot 04](screenshots/04.png)
+
 ## Build
+
+If you want a detailed tutorial, please refer to [Nativefier Documentation](https://github.com/nativefier/nativefier/blob/master/API.md).
 
 ```zsh
 nativefier https://www.notion.so/login --title-bar-style 'hiddenInset' --browserwindow-options '{
