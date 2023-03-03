@@ -1,19 +1,33 @@
 # nativeLike Notion
 
-A repackaged [Notion](https://www.notion.so/) app that runs on macOS.
+## Introduction
 
-This is built with [Nativefier](https://github.com/nativefier/nativefier), a project based on [Electron](https://www.electronjs.org).
+Welcome to nativeLike Notion, the ultimate repackaged [Notion](https://www.notion.so/) app for macOS users!
 
-- A vibrant sidebar and look-like-being-vibrant menus and windows; (Older versions has full vibrancy, but it was not efficient enough.)
+Our app is built with the incredible power of [Nativefier](https://github.com/nativefier/nativefier), a project based on [Electron](https://www.electronjs.org).
 
-- Fixed font fallback;
-- Sandbox support;
-- Native-like scroll bar;
-- Native-like everything;
-- Other minor changes;
+With nativeLike Notion, you will experience a seamless and immersive workflow with its vibrant sidebar and menus that look like they were crafted exclusively for your Mac.
 
-![Dark](https://github.com/SHEN-Muchuan/nativeLike-Notion/blob/4f77aeb022e466cf644acf3f4ed250206586a92b/Screenshot%20Dark.png)
+Additionally, we have included fixed font fallback and sandbox support to ensure that your data is always secure and protected. Our native-like scroll bar and other minor changes will make you forget that you are not using a native app.
 
-![Light](https://github.com/SHEN-Muchuan/nativeLike-Notion/blob/5d8dc495adf7f34f225f39baed00327137fe3a66/Screenshot%20Light.png)
+Download now and experience the difference!
 
-I am currently working on using SwiftUI and WebKit to build it so that it will consume less battery life. However, this may take a long time.
+## Screenshot
+
+## Build
+
+```
+nativefier https://www.notion.so/login --title-bar-style 'hiddenInset' --browserwindow-options '{
+    "show": false,
+    "vibrancy": "sidebar",
+    "trafficLightPosition": {
+        "x": 20,
+        "y": 18
+    },
+    "webPreferences": {
+        "sandbox": true,
+        "spellcheck": false
+    }
+}' --icon ~/nativeLike-Notion/icon.icns --name Notion --min-height 400 --min-width 660 --inject ~/nativeLike-Notion/inject.css --arch universal --mac
+
+```
