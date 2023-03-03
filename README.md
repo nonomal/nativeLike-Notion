@@ -16,7 +16,7 @@ Download now and experience the difference!
 
 ## Build
 
-```
+```zsh
 nativefier https://www.notion.so/login --title-bar-style 'hiddenInset' --browserwindow-options '{
     "show": false,
     "vibrancy": "sidebar",
